@@ -103,15 +103,15 @@ h4
   margin-right: 5px;
 }
 
-.left-col {
+.chess-com {
 grid-column: 3 / 3;
 }
 
-.mid-col {
+.lichess {
 grid-column: 5 / 5;
 }
 
-.right-col {
+.difference {
   grid-column: 7 / 7;
 }
 
