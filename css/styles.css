@@ -7,13 +7,43 @@
 }
 
 html, body {
-
   margin: 0;
   padding: 0;
-  font-family: Arial sans-serif;
-  color: #fff;
+  font-family: var(--body);
+  color: #244224;
   background-color: var(--bright-green);
+}
 
+p {
+
+font-size: 1vw;
+font-weight: 900;
+}
+
+h1, h2, h3, h4 {
+font-family: var(--headings);
+margin: 0;
+}
+h1 {
+  font-size: 3.5vw;}
+
+h2
+
+{
+  color: #5fb15f;
+  font-size: 1.5vw;
+}
+
+h3
+
+{
+  font-size: 1.5vw;
+}
+
+h4
+
+{
+  font-size: 1vw;
 }
 
 .container {
@@ -26,13 +56,14 @@ html, body {
 
 .player-card {
   background-image: url("../assets/pawn.svg");
+  padding: 1vw;
   background-repeat: no-repeat;
   background-position: -300% center;
   background-size: 90% 90%;
   height: 30vw;
   width: 60vw;
   display: grid;
-  grid-template-columns: 1rem 2fr 0.5rem 1fr 0.5rem 1fr 1rem;
+  grid-template-columns: 1rem 2fr 3fr 1rem;
   border-radius: 20px;
   background-color: var(--bright-green);
   box-shadow:  15px 15px 30px #437e43,
@@ -40,28 +71,73 @@ html, body {
 
 }
 
-h1 {
-  font-family: var(--headings);
-  color: #244224;
-  font-size: 1.5rem;
+.profile{
+  grid-column: 2 / 2;
+}
+
+.stats {
+  height: inherit;
+  grid-column: 3 / 3;
+  display: grid;
+  grid-template-columns: 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem;
+  grid-template-rows: 1.5vw 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr;
+}
+
+.game-format {
+  grid-column: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.format-icon {
+
+  height:20px;
+  width:20px;
+  margin-right: 5px;
 }
 
 .left-col {
-grid-column: 2 / 2;
+grid-column: 3 / 3;
 }
 
-.middle-col {
-grid-column: 4 / 4;
+.mid-col {
+grid-column: 5 / 5;
 }
 
 .right-col {
-grid-column: 6 / 6;
+  grid-column: 7 / 7;
 }
 
-h2
+.header-row {
+  grid-row: 1 / 1;
+}
 
-{
-  font-family: var(--headings);
-  color: #5fb15f;
-  font-size: 1rem;
+.rapid {
+
+  grid-row: 3 / 3;
+
+}
+
+.blitz {
+
+  grid-row: 5 / 5;
+
+}
+
+.bullet {
+
+  grid-row: 7 / 7;
+
+}
+
+.explainer {
+  grid-row: 9 / 9;
+  grid-column: 1 / 8;
 }
