@@ -1,0 +1,23 @@
+[{"person": "Tom",
+
+  "id": "TA01",
+
+  "pets": ["Christophe Le Fur", "Teddy", "Rat under the floorboards"]
+
+},
+
+{"person": "William",
+
+  "id": "WA01",
+
+  "pets": ["Keith", "Nigel", "Other hamster name that sounds like bloke at pub"]
+
+},
+
+{"person": "Isobel",
+
+  "id": "IA01",
+
+  "pets": ["Ronron (RIP)", "Angel (RIP)", "Minnie"]
+
+}]

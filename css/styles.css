@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Nixie+One&display=swap');
+
+:root {
+  --bright-green: #539b53;
+  --headings: 'Audiowide', cursive;
+  --body: 'Nixie One', cursive;
+}
+
+html, body {
+
+  margin: 0;
+  padding: 0;
+  font-family: Arial sans-serif;
+  color: #fff;
+  background-color: var(--bright-green);
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.player-card {
+  background-image: url("../assets/pawn.svg");
+  background-repeat: no-repeat;
+  background-position: -300% center;
+  background-size: 90% 90%;
+  height: 30vw;
+  width: 60vw;
+  display: grid;
+  grid-template-columns: 1rem 2fr 0.5rem 1fr 0.5rem 1fr 1rem;
+  border-radius: 20px;
+  background-color: var(--bright-green);
+  box-shadow:  15px 15px 30px #437e43,
+               -15px -15px 30px #63b863;
+
+}
+
+h1 {
+  font-family: var(--headings);
+  color: #244224;
+  font-size: 1.5rem;
+}
+
+.left-col {
+grid-column: 2 / 2;
+}
+
+.middle-col {
+grid-column: 4 / 4;
+}
+
+.right-col {
+grid-column: 6 / 6;
+}
+
+h2
+
+{
+  font-family: var(--headings);
+  color: #5fb15f;
+  font-size: 1rem;
+}
