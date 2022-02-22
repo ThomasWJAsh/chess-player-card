@@ -10,14 +10,16 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: var(--body);
-  color: #244224;
+  color: #305830;
   background-color: var(--bright-green);
 }
 
 p {
 
 font-size: 1vw;
-font-weight: 900;
+color: #244224;
+font-weight: 600;
+line-height: 1.5vw;
 }
 
 h1, h2, h3, h4 {
@@ -32,6 +34,7 @@ h2
 {
   color: #5fb15f;
   font-size: 1.5vw;
+  filter: drop-shadow(0.5px 0.5px 0.5px #244224);
 }
 
 h3
